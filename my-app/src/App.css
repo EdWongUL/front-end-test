@@ -1,0 +1,199 @@
+* {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+}
+
+/*container of the whole page*/
+.container {
+  text-align: center;
+  position: relative;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  z-index: 5;
+  opacity: 1;
+}
+
+.backgrounds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 0.5s;
+  background-size: cover;
+}
+
+/*Top half of the page (with the h1 and stuff*/
+.topPart {
+  padding: 92px 60px;
+  width: 65%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.bottomPart {
+  position: relative;
+  display: flex;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1s;
+  justify-content: stretch;
+  width: 80%;
+  padding-bottom: 70px;
+}
+
+hr {
+  position: absolute;
+  top: 20px;
+  bottom: 35.2%;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  border-width: 0;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 120%;
+  /* or 96px */
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+/*general formatting for each link*/
+.cta {
+  width: 100%;
+  height: 45px;
+
+  background: #42C7E5;
+  border-radius: 2px;
+  border-width: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0A3670;
+  padding: 13px;
+  margin: 10px 5px;
+}
+
+/*cta in topPart*/
+button.contact {
+  width: 40%;
+}
+
+/*cta in each card*/
+button.card {
+
+}
+
+.insideButton {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: #0A3670;
+}
+
+/*each card thing*/
+.cardContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 55px;
+  width: 70%;
+}
+
+/*Heading in each card*/
+h3 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  margin: 40px 5px;
+}
+
+/*excerpt in each card*/
+p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px 5px;
+}
+
+.dot {
+  position: absolute;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(191, 191, 191, 1);
+  border-width: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+  top: 10px;
+  transition: background 300ms, opacity 3000ms;
+}
+
+.inner {
+  left: 65px;
+}
+
+.outer {
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  opacity: 0.4;
+}
+
+img.scrollArrow {
+  height: 219px;
+  width: 67px;
+}
+
+button.active {
+  background: rgba(66, 199, 229, 1);
+}
+
+button.outer.active {
+  transform-origin: center;
+
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+} 
+
+
